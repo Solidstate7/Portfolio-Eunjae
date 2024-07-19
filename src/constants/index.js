@@ -17,254 +17,312 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  crud,
+  kakaologin,
+  devup,
+  stackerlabs,
+  naegift,
   coverhunt,
   dcc,
   kelhel,
   microverse,
-} from '../assets';
+  aws_ec2,
+  aws_s3,
+  aws_rds,
+  aws_secret,
+  aws_load,
+  webpack,
+  babel,
+  express,
+  github_actions,
+  jest,
+  mysql,
+  nestjs,
+  sequelize,
+  typeorm,
+} from "../assets";
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: "about",
+    title: "About",
   },
   {
-    id: 'projects',
-    title: 'Projects',
+    id: "projects",
+    title: "Projects",
   },
   {
-    id: 'contact',
-    title: 'Contact',
+    id: "contact",
+    title: "Contact",
   },
 ];
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
+    title: "Backend Developer",
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
-    icon: ux,
+    title: "CI/CD Pipeline",
+    icon: prototyping,
   },
   {
-    title: 'Software Prototyping',
-    icon: prototyping,
+    title: "Frontend Developer",
+    icon: frontend,
+  },
+  {
+    title: "English Proficiency",
+    icon: ux,
   },
 ];
 
 const technologies = [
+  // {
+  //   name: "JavaScript",
+  //   icon: javascript,
+  // },
   {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
+    name: "TypeScript",
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
+    name: "Node JS",
     icon: nodejs,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
+    name: "Express",
+    icon: express,
   },
   {
-    name: 'graphql',
-    icon: graphql,
+    name: "NestJS",
+    icon: nestjs,
+  },
+  // {
+  //   name: "MySQL",
+  //   icon: mysql,
+  // },
+  {
+    name: "TypeORM",
+    icon: typeorm,
   },
   {
-    name: 'postgresql',
-    icon: postgresql,
+    name: "AWS EC2",
+    icon: aws_ec2,
   },
   {
-    name: 'git',
-    icon: git,
+    name: "AWS S3",
+    icon: aws_s3,
   },
   {
-    name: 'figma',
-    icon: figma,
+    name: "AWS RDS",
+    icon: aws_rds,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: "AWS Secret Manager",
+    icon: aws_secret,
+  },
+  {
+    name: "AWS Load Balancer",
+    icon: aws_load,
+  },
+  {
+    name: "GitHub Actions",
+    icon: github_actions,
+  },
+  {
+    name: "Webpack",
+    icon: webpack,
+  },
+  {
+    name: "Babel",
+    icon: babel,
+  },
+  {
+    name: "Jest",
+    icon: jest,
+  },
+  // {
+  //   name: "Docker",
+  //   icon: docker,
+  // },
+  {
+    name: "React",
+    icon: reactjs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
-  },
-  {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
-  },
-  {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: "IELTS Academic 8.0",
+    company_name: "British Council",
     icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    iconBg: "#333333",
+    date: "Aug 2022 - Aug 2024",
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: "블록체인 기반 핀테크 및 응용 SW 개발자 양성과정 (10 개월)",
+    company_name: "경일게임아카데미",
+    icon: coverhunt,
+    iconBg: "#333333",
+    date: "Jun 2023 - Mar 2024",
+  },
+  {
+    title: "ETH Seoul 2024 Hackathon",
+    company_name: "Neowiz Pangyo",
+    icon: microverse,
+    iconBg: "#333333",
+    date: "29 - 31 Mar 2024",
+  },
+  {
+    title: "첨단공학부 AI 전공",
+    company_name: "KNOU 프라임칼리지",
     icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    iconBg: "#333333",
+    date: "Mar 2024 - Present",
   },
 ];
 
 const projects = [
   {
-    id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
-  },
-  {
-    id: 'project-2',
-    name: 'Leaderboard',
+    id: "project-1",
+    name: "NestJS CRUD Auth CI/CD",
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      "NestJS Server에서 CRUD, 로컬/소셜 로그인을 구현하고 AWS CodePipeline을 통해 CI/CD를 구축했습니다. 현재 진행중입니다.",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: "nestjs",
+        color: "blue-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "oauth",
+        color: "green-text-gradient",
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient',
+        name: "aws",
+        color: "pink-text-gradient",
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: naegift,
+    // repo: "",
+    // demo: "",
   },
   {
-    id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    id: "project-2",
+    name: "Web3: Naegift",
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      "분산 신원 증명 기술을 활용한 Web3 기프티콘 마켓플레이스를 5인 팀과 5주 동안 개발했습니다. 팀장으로서 일정 관리와 발표를 맡았으며, 분산 신원 연구와 백엔드 구현을 담당했습니다. Veramo와 Ethers.js를 사용해 기프티콘 발급 및 에스크로 로직을, React로 수령 로직을 구현했습니다.",
     tags: [
       {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
+        name: "react",
+        color: "blue-text-gradient",
       },
       {
-        name: 'supabase',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: "scss",
+        color: "pink-text-gradient",
       },
     ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: naegift,
+    repo: "https://github.com/Solidstate7/did_project_upgrade",
+    demo: "https://nae-gift.com/",
+  },
+  {
+    id: "project-3",
+    name: "React: Stacker-Labs",
+    description:
+      "태그, 카테고리, 팔로우 기능이 추가된 개발자 커뮤니티를 4인 팀과 4주 동안 개발했습니다. 팀장으로 일정 관리와 발표를 맡았으며, 컴포넌트 구현과 백엔드 통신, 프론트 서버 배포를 담당했습니다. Recoil, React Router, React Query, GitHub Actions로 구현했습니다.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: stackerlabs,
+    repo: "https://github.com/Stacker-Labs/KGA-React-Project",
+    demo: "https://stacker-labs.vercel.app/",
+  },
+  {
+    id: "project-4",
+    name: "Express: DevUp",
+    description: `실시간 채팅 가능한 개발자 커뮤니티를 3인 팀과 3주 동안 개발했습니다. 팀장으로서 일정 관리와 발표, 피그마 디자인, 페이지 구현, WebSocket 채팅 구현을 맡았습니다. 웹페이지 레이아웃과 정적 페이지, WebSocket 채팅, 채팅 로그 저장을 구현했습니다.`,
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: devup,
+    repo: "https://github.com/KGA-Town-Bus/Project_DevUp",
+    // demo: "https://movie-metro.netlify.app/",
+  },
+  {
+    id: "project-5",
+    name: "Kakao Login Process",
+    description:
+      "카카오 소셜 로그인을 구현한 프로젝트로, 혼자서 하루 동안 진행했습니다. 시퀀스 다이어그램을 제작하고, 통신 주체들의 HTTP 요청/응답을 설계하여 코드를 작성했습니다. 다이어그램은 GitHub 레포지토리에 있습니다.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: kakaologin,
+    repo: "https://github.com/Solidstate7/Kakao_Login",
+    // demo: "https://shaqdeff.github.io/Nyeusi-Fest-Site/",
+  },
+  {
+    id: "project-6",
+    name: "Express CRUD",
+    description:
+      "로그인 및 회원가입이 가능한 학원 건의 게시판을 2인 팀과 2주 동안 개발했습니다. 팀장으로 일정 관리와 발표, 백엔드 구현을 맡았습니다. MVC 패턴으로 서버를 구현하고, Template Engine을 사용해 SSR 기반 CRUD를 구현했으며, ORM을 하드코딩했습니다.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: crud,
+    repo: "https://github.com/Solidstate7/CRUD_BOARD_PROJECT",
+    // demo: "https://shaqdeff.github.io/Nyeusi-Fest-Site/",
   },
 ];
 
