@@ -98,10 +98,10 @@ const technologies = [
     name: "NestJS",
     icon: nestjs,
   },
-  // {
-  //   name: "MySQL",
-  //   icon: mysql,
-  // },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
   {
     name: "TypeORM",
     icon: typeorm,
@@ -138,13 +138,9 @@ const technologies = [
     name: "Babel",
     icon: babel,
   },
-  {
-    name: "Jest",
-    icon: jest,
-  },
   // {
-  //   name: "Docker",
-  //   icon: docker,
+  //   name: "Jest",
+  //   icon: jest,
   // },
   {
     name: "React",
@@ -154,6 +150,10 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  // {
+  //   name: "Docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
