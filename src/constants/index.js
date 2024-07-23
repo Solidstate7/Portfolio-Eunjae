@@ -40,6 +40,7 @@ import {
   nestjs,
   sequelize,
   typeorm,
+  space,
 } from "../assets";
 
 export const navLinks = [
@@ -189,7 +190,7 @@ const experiences = [
 const projects = [
   {
     id: "project-1",
-    name: "NestJS CRUD Auth CI/CD",
+    name: "NestJS CRUD CI/CD",
     description:
       "NestJS Server에서 CRUD, 로컬/소셜 로그인을 구현하고 AWS CodePipeline을 통해 CI/CD를 구축했습니다. 현재 진행중입니다.",
     tags: [
@@ -206,7 +207,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: naegift,
+    image: space,
     // repo: "",
     // demo: "",
   },
@@ -214,7 +215,7 @@ const projects = [
     id: "project-2",
     name: "Web3: Naegift",
     description:
-      "분산 신원 증명 기술을 활용한 Web3 기프티콘 마켓플레이스를 5인 팀과 5주 동안 개발했습니다. 팀장으로서 일정 관리와 발표를 맡았으며, 분산 신원 연구와 백엔드 구현을 담당했습니다. Veramo와 Ethers.js를 사용해 기프티콘 발급 및 에스크로 로직을, React로 수령 로직을 구현했습니다.",
+      "Web3 기프티콘 마켓플레이스를 5인 팀과 5주 동안 개발했습니다. 분산 신원 연구와 백엔드 구현을 담당했고, Veramo와 Ethers.js를 사용해 기프티콘 발급 및 에스크로 로직을, React로 수령 로직을 구현했습니다.",
     tags: [
       {
         name: "react",
@@ -237,7 +238,7 @@ const projects = [
     id: "project-3",
     name: "React: Stacker-Labs",
     description:
-      "태그, 카테고리, 팔로우 기능이 추가된 개발자 커뮤니티를 4인 팀과 4주 동안 개발했습니다. 팀장으로 일정 관리와 발표를 맡았으며, 컴포넌트 구현과 백엔드 통신, 프론트 서버 배포를 담당했습니다. Recoil, React Router, React Query, GitHub Actions로 구현했습니다.",
+      "태그, 카테고리, 팔로우 기능이 추가된 개발자 커뮤니티를 4인 팀과 4주 동안 개발했습니다. 컴포넌트 구현과 백엔드 통신, 프론트 서버 배포를 담당했으며, Recoil, React Router, React Query, GitHub Actions가 사용됐습니다.",
     tags: [
       {
         name: "nextjs",
@@ -259,7 +260,7 @@ const projects = [
   {
     id: "project-4",
     name: "Express: DevUp",
-    description: `실시간 채팅 가능한 개발자 커뮤니티를 3인 팀과 3주 동안 개발했습니다. 팀장으로서 일정 관리와 발표, 피그마 디자인, 페이지 구현, WebSocket 채팅 구현을 맡았습니다. 웹페이지 레이아웃과 정적 페이지, WebSocket 채팅, 채팅 로그 저장을 구현했습니다.`,
+    description: `실시간 채팅 가능한 개발자 커뮤니티를 3인 팀과 3주 동안 개발했습니다. Figma로 웹페이지 레이아웃을 디자인하여 정적 페이지, 실시간 채팅을 구현했습니다.`,
     tags: [
       {
         name: "nextjs",
@@ -282,7 +283,7 @@ const projects = [
     id: "project-5",
     name: "Kakao Login Process",
     description:
-      "카카오 소셜 로그인을 구현한 프로젝트로, 혼자서 하루 동안 진행했습니다. 시퀀스 다이어그램을 제작하고, 통신 주체들의 HTTP 요청/응답을 설계하여 코드를 작성했습니다. 다이어그램은 GitHub 레포지토리에 있습니다.",
+      "카카오 소셜 로그인을 구현한 개인 프로젝트입니다. 통신 주체들의 HTTP 요청/응답을 시퀀스 다이어그램으로 설계하여 코드를 작성했습니다. 다이어그램은 GitHub 레포지토리에 있습니다.",
     tags: [
       {
         name: "nextjs",
@@ -305,7 +306,7 @@ const projects = [
     id: "project-6",
     name: "Express CRUD",
     description:
-      "로그인 및 회원가입이 가능한 학원 건의 게시판을 2인 팀과 2주 동안 개발했습니다. 팀장으로 일정 관리와 발표, 백엔드 구현을 맡았습니다. MVC 패턴으로 서버를 구현하고, Template Engine을 사용해 SSR 기반 CRUD를 구현했으며, ORM을 하드코딩했습니다.",
+      "로그인 및 회원가입이 가능한 학원 건의 게시판을 2인 팀과 2주 동안 개발했으며 백엔드 구현을 맡았습니다. MVC 패턴으로 서버를 구현하고, Template Engine을 사용해 SSR 기반 CRUD를 구현했으며, ORM을 하드코딩했습니다.",
     tags: [
       {
         name: "nextjs",

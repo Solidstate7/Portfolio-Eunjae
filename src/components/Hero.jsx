@@ -49,11 +49,13 @@ const Hero = () => {
                 Eunjae
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              안녕하세요, 백엔드 개발자 이은재입니다.{" "}
-              <br className="sm:block hidden" />
-              집요한 탐구로 유용한 서비스를 만들고 싶습니다.
+            <p className={`${styles.heroSubText} mt-2 text-eerieBlack lg:`}>
+              Backend Developer
             </p>
+            <div className="spacer h-5 w-5"></div>
+            <span className="text-eerieBlack sm:text-[1.5rem] lg:text-[30px] ">
+              집요한 탐구로 유용한 서비스를 만들고 싶습니다.
+            </span>
           </div>
           <div
             className="w-screen flex flex-col items-start 

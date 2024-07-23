@@ -62,7 +62,7 @@ import kakaologin from "./projects/kakaologin.gif";
 import devup from "./projects/devup.gif";
 import stackerlabs from "./projects/stackerlabs.gif";
 import naegift from "./projects/naegift.gif";
-// import space from "./projects/space-hub.png";
+import space from "./projects/space-hub.png";
 
 export {
   bwmap,
@@ -123,4 +123,5 @@ export {
   nestjs,
   sequelize,
   typeorm,
+  space,
 };
